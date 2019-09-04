@@ -1,7 +1,7 @@
 let friends = require("../data/friends.js");
 
 // routing apiRoutes
-module.exports = funciton(app) {
+module.exports = function (app) {
     // app.get request
     app.get("/api/friends", function (req, res) {
         res.json(friends);
@@ -22,26 +22,26 @@ module.exports = funciton(app) {
         let userPhoto = userInfo.photo;
     })
     // variable for difference of scores
-    let scoreDiff = 0;
+    let totalDifference = 0;
 
     // loop to get friends scores
     for (var i = 0; i, friends.length - 1; i++) {
         console.log(friends[i].name);
-        scoreDiff = 0;
+        totalDifference = 0;
 
         // loop for difference between scores
         for (var j = 0; j < 10; j++) {
-            scoreDiff += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
-            if (scoreDiff <= bestMatch.friendDiff)
+            if (totalDifference <= yourMatch.friendDiff)
 
-                bestMatch.name = friends[i].name;
-            bestMatch.photo = friends[i].photo;
-            bestMatch.friendDiff = scoreDiff;
+                yourMatch.name = friends[i].name;
+            yourMatch.photo = friends[i].photo;
+            yourMatch.friendDiff = totalDifference;
         }
     }
 }
 // push method for data
 friends.push(userInfo);
 
-res.json(bestMatch);
+res.json(yourMatch);

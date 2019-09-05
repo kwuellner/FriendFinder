@@ -4,15 +4,15 @@ let friends = [
         photo: "https://www.pexels.com/photo/action-adult-adventure-biker-242829/",
         scores: [
             "2",
-            "3",
+            "4",
             "1",
-            "5",
-            "5",
-            "2",
             "4",
+            "5",
+            "5",
             "3",
-            "2",
+            "3",
             "4",
+            "1",
         ]
     },
 
@@ -20,16 +20,16 @@ let friends = [
         name: "Rain Wilson",
         photo: "https://www.pexels.com/photo/adult-band-close-up-concert-243989/",
         scores: [
-            "2",
-            "3",
-            "1",
+            "4",
             "5",
             "5",
-            "2",
-            "4",
             "3",
             "2",
-            "4",
+            "2",
+            "5",
+            "3",
+            "2",
+            "5",
         ]
     },
 
@@ -37,16 +37,16 @@ let friends = [
         name: "Sasha Lang",
         photo: "https://www.pexels.com/photo/shallow-focus-photo-of-woman-sitting-on-couch-2602085/",
         scores: [
-            "2",
             "3",
+            "2",
+            "4",
+            "5",
+            "4",
             "1",
-            "5",
-            "5",
-            "2",
             "4",
+            "2",
+            "2",
             "3",
-            "2",
-            "4",
         ]
     },
 
@@ -55,15 +55,15 @@ let friends = [
         photo: "https://www.pexels.com/photo/chef-holding-white-tea-cup-887827/",
         scores: [
             "2",
+            "2",
+            "5",
             "3",
+            "4",
+            "3",
+            "4",
             "1",
-            "5",
-            "5",
-            "2",
-            "4",
             "3",
-            "2",
-            "4",
+            "5",
         ]
     }
 ];

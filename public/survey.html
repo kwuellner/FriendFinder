@@ -254,7 +254,7 @@
 
             if (checkForm()) {
 
-                let userData = {
+                let userInfo = {
                     name: $("#name").val(),
                     photo: $("#photo").val(),
                     scores: [
@@ -271,7 +271,7 @@
                     ]
                 };
                 // ajax data post
-                $.post("/api/friends", userData, function (data) {
+                $.post("/api/friends", userInfo, function (data) {
 
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);

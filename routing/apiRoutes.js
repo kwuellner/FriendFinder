@@ -1,4 +1,4 @@
-let friends = require("../data/friends.js");
+let friends = require("../app/data/friends");
 
 // routing apiRoutes
 module.exports = function (app) {
@@ -31,17 +31,19 @@ module.exports = function (app) {
 
         // loop for difference between scores
         for (var j = 0; j < 10; j++) {
-            totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+            totalDifference += Math.abs(parseInt(userScore[j]) - parseInt(friends[i].scores[j]));
 
-            if (totalDifference <= yourMatch.friendDiff)
+            if (totalDifference <= yourMatch.friendDiff) {
 
                 yourMatch.name = friends[i].name;
-            yourMatch.photo = friends[i].photo;
-            yourMatch.friendDiff = totalDifference;
+                yourMatch.photo = friends[i].photo;
+                yourMatch.friendDiff = totalDifference;
+            }
         }
     }
-}
-// push method for data
-friends.push(userInfo);
+    // push method for data
+    friends.push(userInfo);
 
-res.json(yourMatch);
+    res.json(yourMatch);
+
+};

@@ -1,7 +1,7 @@
 let friends = [
     {
         name: "Ryan Smith",
-        photo: "https://www.pexels.com/photo/action-adult-adventure-biker-242829/",
+        photo: "https://images.pexels.com/photos/242829/pexels-photo-242829.jpeg?cs=srgb&dl=action-adult-adventure-242829.jpg&fm=jpg",
         scores: [
             "2",
             "4",
@@ -12,13 +12,13 @@ let friends = [
             "3",
             "3",
             "4",
-            "1",
+            "1"
         ]
     },
 
     {
         name: "Rain Wilson",
-        photo: "https://www.pexels.com/photo/adult-band-close-up-concert-243989/",
+        photo: "https://images.pexels.com/photos/243989/pexels-photo-243989.jpeg?cs=srgb&dl=adult-band-close-up-243989.jpg&fm=jpg",
         scores: [
             "4",
             "5",
@@ -29,13 +29,13 @@ let friends = [
             "5",
             "3",
             "2",
-            "5",
+            "5"
         ]
     },
 
     {
         name: "Sasha Lang",
-        photo: "https://www.pexels.com/photo/shallow-focus-photo-of-woman-sitting-on-couch-2602085/",
+        photo: "https://images.pexels.com/photos/2602085/pexels-photo-2602085.jpeg?cs=srgb&dl=beautiful-blur-brunette-2602085.jpg&fm=jpg",
         scores: [
             "3",
             "2",
@@ -46,13 +46,13 @@ let friends = [
             "4",
             "2",
             "2",
-            "3",
+            "3"
         ]
     },
 
     {
         name: "Xavier Barros",
-        photo: "https://www.pexels.com/photo/chef-holding-white-tea-cup-887827/",
+        photo: "https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?cs=srgb&dl=chef-coffee-cook-887827.jpg&fm=jpg",
         scores: [
             "2",
             "2",
@@ -63,9 +63,9 @@ let friends = [
             "4",
             "1",
             "3",
-            "5",
+            "5"
         ]
     }
 ];
 
-modal_exports = friends;
+module.exports = friends;

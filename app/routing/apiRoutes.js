@@ -3,12 +3,12 @@ let friends = require("../data/friends.js");
 // routing apiRoutes
 module.exports = function (app) {
     // app.get request
-    app.get("/api/friends", function (req, res) {
+    app.get('/api/friends', function (req, res) {
         res.json(friends);
     });
 
     // app.post for when user submits form
-    app.post("/api/friends", function (req, res) {
+    app.post('/api/friends', function (req, res) {
         let yourMatch = {
             name: "",
             photo: "",
@@ -17,7 +17,7 @@ module.exports = function (app) {
 
         // variables to get the results of users survey
         let userInfo = req.body;
-        let userScore = userInfo.score;
+        let userScore = userInfo.scores;
         let userName = userInfo.name;
         let userPhoto = userInfo.photo;
 
